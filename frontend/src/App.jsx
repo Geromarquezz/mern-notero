@@ -5,12 +5,14 @@ import CreatePage from './pages/CreatePage.jsx'
 
 export const App = () => {
   return (
-    <div data-theme="dark" className='relative h-full w-full'>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/notes/:id" element={<NoteDetailPage />} />
-        <Route path="/create" element={<CreatePage />} />
-      </Routes>
+    <div>
+      <div data-theme="dark" className='relative h-full w-full'>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/notes/:id" element={<NoteDetailPage />} />
+          <Route path="/create" element={<CreatePage />} />
+        </Routes>
+      </div>
     </div>
   );
 };
